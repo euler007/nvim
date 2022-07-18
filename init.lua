@@ -10,6 +10,7 @@ require "user.autopairs"
 require "user.nvim-tree"
 require "user.comment"
 require "user.toggleterm"
+require "user.flutter-tools"
 -- require "user.lualine"
 -- require "user.bufferline"
 
