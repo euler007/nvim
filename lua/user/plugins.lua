@@ -95,6 +95,9 @@ return packer.startup(function(use)
   --ToggleTerm
   use "akinsho/toggleterm.nvim" --used to display term inside nvim
 
+  --flutter additinal plugins
+    use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
+
   --LuaLine
   --use "nvim-lualine/lualine.nvim"
   --BufferLine
