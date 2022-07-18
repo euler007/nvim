@@ -27,8 +27,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 
 -- Navigate buffers
-keymap("n", "<S-h>", ":bnext<CR>", opts)
-keymap("n", "<S-l>", ":bprevious<CR>", opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-d>", ":NvimTreeClose<CR>:bd<CR>:bprevious<CR>", opts)
 
 --Yank
@@ -51,11 +51,16 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
---NVimTree Kepmaps
+--NVimTree Keypmaps
 keymap("n","<C-n>",":NvimTreeToggle<CR>",opts)
 
 -- Clear Highlighting
-keymap("n","<leader>/",":noh<CR>",term_opts)
-
-
+--Flutter Shortcuts
+keymap("n","fs",":FlutterRun<CR>",opts)
+keymap("n","fd",":FlutterDevices<CR>",opts)
+keymap("n","fr",":FlutterReload<CR>",opts)
+keymap("n","fR",":FlutterRestart<CR>",opts)
+keymap("n","fl",":FlutterOutlineToggle<CR>",opts)
+keymap("n","fv",":FlutterVisualDebug<CR>",opts)
+keymap("n","fq",":FlutterQuit<CR>",opts)
 
